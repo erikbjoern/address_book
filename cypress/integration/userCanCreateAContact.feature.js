@@ -11,5 +11,12 @@ describe('user can create a contact', () => {
         cy.get('#submit').click()
     })
 
+    it('displays a name of a contact', () => {
+        cy.get('#contact-list').should('contain', 'Noel')
+    })
 
+    it('displays an email of a contact', () => {
+        cy.get('#contact-list').should('contain', 'noel@craft.se')
+    })
 })
+
