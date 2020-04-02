@@ -16,8 +16,8 @@ const renderContacts = () => {
             <span>${contact.email}</span> |
             <span>${contact.phone}</span> |
             <span>${contact.company}</span> |
-            <span>${contact.notes}</span> |
             <span>${contact.twitter}</span> |
+            <span>${contact.notes}</block> |
             `
             ul.appendChild(li)
         })
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             email: email.value,
             phone: phone.value,
             company: company.value,
-            notes: notes.value,
             twitter: twitter.value,
+            notes: notes.value,
         }
 
         console.log(contact)

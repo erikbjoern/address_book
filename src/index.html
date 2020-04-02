@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <h1>Contacts list</h1>
@@ -17,11 +18,13 @@
         <input type="number" id="phone" name="phone">
         <label for="company">Company</label>
         <input type="text" id="company" name="company">
-        <label for="notes">Notes</label>
-        <input type="text" id="notes" name="notes">
         <label for="twitter">Twitter</label>
         <input type="text" id="twitter" name="twitter">
+        <label for="notes">Notes</label>
+        <textarea type="text" id="notes" name="notes"></textarea>
         <input type="submit" id="submit" value="Save Contact">
+        
+        
     </form>
     <div id="contact-list"></div>
     <script src="./assets/js/app.js"></script>
