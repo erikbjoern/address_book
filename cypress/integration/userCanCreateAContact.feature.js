@@ -11,5 +11,28 @@ describe('user can create a contact', () => {
         cy.get('#submit').click()
     })
 
+    it('displays a name of a contact', () => {
+        cy.get('#contact-list').should('contain', 'Noel')
+    })
 
+    it('displays an email for a contact', () => {
+        cy.get('#contact-list').should('contain', 'noel@craft.se')
+    })
+
+    it('displays a phone for a contact', () => {
+        cy.get('#contact-list').should('contain', '0706187603')
+    })
+
+    it('displays a company for a contact', () => {
+        cy.get('#contact-list').should('contain', 'Craft Academy')
+    })
+
+    it('displays a note for a contact', () => {
+        cy.get('#contact-list').should('contain', 'An Irish Person')
+    })
+
+    it('displays a twitter for a contact', () => {
+        cy.get('#contact-list').should('contain', 'Noelryn')
+    })
 })
+
