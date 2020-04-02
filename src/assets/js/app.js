@@ -16,8 +16,8 @@ const renderContacts = () => {
             <span>${contact.email}</span> |
             <span>${contact.phone}</span> |
             <span>${contact.company}</span> |
-            <span>${contact.notes}</span> |
             <span>${contact.twitter}</span> |
+            <span>${contact.notes}</block> |
             `
             ul.appendChild(li)
         })
@@ -32,6 +32,17 @@ const renderContacts = () => {
 document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     const contactForm = document.getElementById('new-contact-form')
+    const toggleFormVisibilityButton = document.getElementById('add-contact')
+    contactForm.style.display = 'none'
+
+    toggleFormVisibilityButton.addEventListener('click', () => {
+        if (contactForm.style.display === '') {
+                contactForm.style.display = 'none'
+        } else {
+            contactForm.style.display = ''
+        }
+    })
+
     contactForm.addEventListener('submit', event => {
         event.preventDefault()
 
@@ -42,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
             email: email.value,
             phone: phone.value,
             company: company.value,
-            notes: notes.value,
             twitter: twitter.value,
+            notes: notes.value,
         }
 
         console.log(contact)
