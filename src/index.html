@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Contacts list</h1>
+  <h1>Contacts</h1>
     <button id="add-contact"><i class="fa fa-user-plus" aria-hidden="true"></i> Add contact</button>
     <form action="" id="new-contact-form">
         <label for="name">Name</label>
@@ -24,9 +24,15 @@
         <label for="notes">Notes</label>
         <textarea type="text" id="notes" name="notes"></textarea>
         <input type="submit" id="submit" value="Save Contact">
-        
-        
     </form>
+    <div id="headings">
+        <div class="name">| Name</div>
+        <div class="email">| Email</div>
+        <div class="phone">| Phone</div>
+        <div class="company">| Company</div>
+        <div class="twitter">| Twitter</div>
+        <div class="notes">| Notes</div>
+    </div>
     <div id="contact-list"></div>
     <script src="./assets/js/app.js"></script>
 </body>

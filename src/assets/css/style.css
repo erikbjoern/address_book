@@ -1,21 +1,36 @@
 h1 {
     padding: 2% 2% 2% 10%;
-    color: yellow;
+    color: rgb(255, 0, 0);
 }
 
-#contact-list {
+#add-contact {
+    margin: 0px 10px 10px;
+}
+
+#new-contact-form {
+    padding: 10px 10px;
+}
+
+#headings {
     display: grid;
-    columns: auto;
+    grid-template-columns: repeat(6, 220px);
+    padding: 50px 10px 20px;
+    border-bottom: 1px solid rgb(168, 174, 179);
+}
+
+#headings > * {
+    width: 220px;
 }
 
 ul {
-    background-color: tomato;
+    background-color:;
     display: grid;
-    columns: auto;
+    grid-template-columns: repeat(6, 220px);
+    padding-inline-start: 10px;
 }
 
-li {
-    background-color: teal;
-    width: fit-content;
-    height: fit-content;
+ul > * {
+    background-color:;
+    width: 220px;
+    padding: 2px 0;
 }
