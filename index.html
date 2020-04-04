@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Contacts list</h1>
-    <button id="add-contact">Add contact</button>
+  <h1>Contacts</h1>
+    <button id="add-contact"><i class="fa fa-user-plus" aria-hidden="true"></i> Add contact</button>
     <form action="" id="new-contact-form">
         <label for="name">Name</label>
         <input type="text" id="name" name="name">
@@ -17,12 +19,20 @@
         <input type="number" id="phone" name="phone">
         <label for="company">Company</label>
         <input type="text" id="company" name="company">
-        <label for="notes">Notes</label>
-        <input type="text" id="notes" name="notes">
         <label for="twitter">Twitter</label>
         <input type="text" id="twitter" name="twitter">
+        <label for="notes">Notes</label>
+        <textarea type="text" id="notes" name="notes"></textarea>
         <input type="submit" id="submit" value="Save Contact">
     </form>
+    <div id="headings">
+        <div class="name">| Name</div>
+        <div class="email">| Email</div>
+        <div class="phone">| Phone</div>
+        <div class="company">| Company</div>
+        <div class="twitter">| Twitter</div>
+        <div class="notes">| Notes</div>
+    </div>
     <div id="contact-list"></div>
     <script src="./assets/js/app.js"></script>
 </body>
