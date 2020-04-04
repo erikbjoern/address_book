@@ -7,9 +7,35 @@ const renderContacts = () => {
     if (contacts) {
         div.innerHTML = ''
         const ul = document.createElement('ul')
+        
 
         contacts.forEach(contact => {
-            let li = document.createElement('li')
+            let nameList = document.createElement('nameList')
+            nameList.innerHTML = `| <span>${contact.name}</span>`
+            ul.appendChild(nameList)
+
+            let emailList = document.createElement('emailList')
+            emailList.innerHTML = `| <span>${contact.email}</span>`
+            ul.appendChild(emailList)
+
+            let phoneList = document.createElement('phoneList')
+            phoneList.innerHTML = `| <span>${contact.phone}</span>`
+            ul.appendChild(phoneList)
+
+            let companyList = document.createElement('companyList')
+            companyList.innerHTML = `| <span>${contact.company}</span>`
+            ul.appendChild(companyList)
+
+            let twitterList = document.createElement('twitterList')
+            twitterList.innerHTML = `| <span>${contact.twitter}</span>`
+            ul.appendChild(twitterList)
+
+            let notesList = document.createElement('notesList')
+            notesList.innerHTML = `| <span>${contact.notes}</span>`
+            ul.appendChild(notesList)
+            
+            
+            /*let li = document.createElement('li')
 
             li.innerHTML = `
             <span>${contact.name}</span> |
@@ -17,9 +43,9 @@ const renderContacts = () => {
             <span>${contact.phone}</span> |
             <span>${contact.company}</span> |
             <span>${contact.twitter}</span> |
-            <span>${contact.notes}</block> |
+            <span>${contact.notes}</span> |
             `
-            ul.appendChild(li)
+            ul.appendChild(li)*/
         })
 
     div.appendChild(ul)
