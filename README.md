@@ -1,7 +1,6 @@
 # address_book
-The Address Book Challenge
 
-**Objective:** create an address book with following functionality:
+**Objective:** create an application with following functionality:
 
 * A form for adding a new contact
 * Save new contacts locally
